@@ -1,0 +1,85 @@
+*
+{
+    margin:     0;
+    padding:    0;
+}
+
+::-webkit-scrollbar
+{ 
+    display: none; 
+    
+}
+ 
+html
+{
+    background:        #000;
+    font-family:        'OCR A Extended', sans-serif;
+    color:             #fff;
+    text-transform:     uppercase;
+    font-size:          7vmin;
+}
+
+ 
+.webgl
+{
+    position:   fixed;
+    top:        0;
+    left:       0;
+    outline:    none;
+}
+
+.section
+{
+    display:        flex;
+    align-items:    center;
+    height:         100vh;
+    position:       relative;
+    
+    padding-left:   10%;
+    padding-right:  10%;
+
+    justify-content: center;
+   
+}
+
+.titleContent
+{
+    text-align: center;
+}
+
+
+
+/*SECOND SECTION*/
+#introContent
+{
+    height:     100vh;
+    width:     100vw;
+    font-size:  7vmin;
+
+    
+}
+
+#introTitleContainer
+{
+    width:  100%;
+    height: 18%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#logo1
+{
+    height: 7vmax; 
+    margin-left: 2%;
+}
+
+#introDescription
+{
+    font-size:          3.5vmin;
+    margin-top:         2%;
+    text-transform:     none;
+}
