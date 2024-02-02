@@ -16,42 +16,90 @@
     <link rel="icon" type="image/x-icon" href="/static/img/skillset.svg">
 </head>
 <body>
-    <canvas class="webgl"></canvas>
+<canvas class="webgl"></canvas>
 
-    <section class="section">
-        <div>
-            <h1 class="titleContent">I'm Adrian Rico</h1>
-            <h1 class="titleContent">Let's <span class="typing_anim"></span></h1>
+<!-- SECTION 0 -->
+<section class="section">
+    
+    <div id="introContainer">
+        <div id="introContainer_staticText">
+            <h1>I'm Adrian Rico</h1>
         </div>
-        
-    </section>
+        <div id="introContainer_dynamicText">
+            <h2>Let's <span class="typing_anim"></span></h2>
+        </div>
+        <div id="introContainer_logos">
+            <img class="logos" src="../static/img/linkedin_logo.svg" alt="">
+            <img class="logos" src="../static/img/github_logo.svg" alt="">
+            <p class="typing_anim"><span class="scroll_down"></span></p>
+        </div>
+    </div>
 
+</section>
 
+<!-- SECTION 1 -->
     <section class="section">
-        <div id="introContent">
-           <div id="introTitleContainer">
-                <h1 class="titleContent">About me</h1>
-                <img src="/static/img/rocket.svg" alt="" id="logo1">
+        <div class="mainSectionContainer">
+           <div class="mainContainerTitle_div">
+                <h1 class="mainContainerTitle_text">About me</h1>
+                <img src="/static/img/rocket.svg" alt="" id="rocket">
            </div>
-           <p id="introDescription" ><span class="typing_anim2"></span></p>
+           <p><span class="typing_anim2"></span></p>
         </div>
     </section>
 
-
+<!-- SECTION 2 -->
     <section class="section">
-        <div id="introContent">
-            <div id="introTitleContainer">
-                 <h1 class="titleContent">PROJECTS</h1>
-                 <img src="/static/img/projects.svg" alt="" id="logo1">
+        <div class="mainSectionContainer">
+            <div class="mainContainerTitle_div">
+                 <h1 class="mainContainerTitle_text">PROJECTS</h1>
+                 <img src="/static/img/projects.svg" alt="" id="compass">
             </div>
-        
-            <p id="introDescription" >
-                A brief showcase of some projects i have been working
-                on and can give you an idea of what i can do for you.
-            </p>
+            <p><span class="typing_anim3"></span></p>
+
+            <div class="projectContent_div">
+                <div class="projectContent_sub_div">
+                    
+                    <h6 class="projectTitle_text">NOISE DETECTION ALGORITHM</h6>
+                    <p><span class="typing_anim4"></span></p>
+
+                    <div id="skillSet" class="previous">
+                        <div id="skillTittle">
+                            <img src="/static/img/skillset.svg" alt="my_skill_set" id="titleImg">
+                            <h2 class="titleText">MAIN SKILLS</h2>
+                        </div>
+                        
+                        <div id="skillDisplay">
+                            <div class="skillRow">
+                                <div class="skillCol">
+                                    <div class="skill">
+                                        <div class="logoContainer"><img src="/static/img/vscodeLogo.svg" alt="" class="logo"></div>
+                                        <div class="text">VS CODE</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="skillCol">
+                                    <div class="skill">
+                                        <div class="logoContainer"><img src="/static/img/cppLogo.svg" alt="" class="logo"></div>
+                                        <div class="text">C++</div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectContent_sub_div">
+                    
+                </div>
+            </div>
+
 
             
+
         </div>
+
+            
     </section>
 
 
@@ -67,13 +115,28 @@
     <script>
         var options = {
         strings: ['IMAGINE','CREATE','CODE','AUTOMATE','WORK'],
-        typeSpeed: 50,
-        backSpeed: 25,
+        typeSpeed: 30,
+        backSpeed: 15,
         showCursor:true,
         loop:false
         };
 
         var typed = new Typed('.typing_anim', options);
+        
+        setTimeout(function()
+        {
+            var options = {
+            strings: ['SCROLL DOWN...'],
+            typeSpeed: 30,
+            backSpeed: 15,
+            showCursor:false,
+            loop:false
+            };
+
+            var typed = new Typed('.scroll_down', options);
+
+        }, 5500);
+
     </script>
 </body>
 </html>

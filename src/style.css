@@ -1,3 +1,4 @@
+/* HTML general config */
 *
 {
     margin:     0;
@@ -7,19 +8,18 @@
 ::-webkit-scrollbar
 { 
     display: none; 
-    
 }
  
 html
 {
-    background:        #000;
+
+    background:        #0a1930;
     font-family:        'OCR A Extended', sans-serif;
     color:             #fff;
     text-transform:     uppercase;
     font-size:          7vmin;
 }
 
- 
 .webgl
 {
     position:   fixed;
@@ -30,56 +30,300 @@ html
 
 .section
 {
-    display:        flex;
-    align-items:    center;
-    height:         100vh;
+    height: 100vh;
+
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+
     position:       relative;
     
-    padding-left:   10%;
-    padding-right:  10%;
+    padding-left:   1%;
+    padding-right:  1%;
 
-    justify-content: center;
-   
 }
 
-.titleContent
+#introContainer
 {
-    text-align: center;
-}
-
-
-
-/*SECOND SECTION*/
-#introContent
-{
-    height:     100vh;
-    width:     100vw;
-    font-size:  7vmin;
-
+    height:     100%;
+    width:      100%;    
     
 }
 
-#introTitleContainer
+#introContainer_staticText
+{
+    height:     50%;
+    width:      100%;
+
+    display:            flex;
+    align-items:        end;
+    justify-content:    center;
+    
+}
+
+#introContainer_dynamicText
+{
+    height:     10%;
+    width:      100%;
+
+    display:            flex;
+    align-items:        baseline;
+    justify-content:    center;
+
+}
+
+#introContainer_logos
+{
+    height:     38%;
+    width:      100%;
+
+    text-align: center;
+    word-spacing: -1.5vh;
+    display: inline-block;
+
+    padding-top: 2%;
+}
+
+.logos
+{
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.logos:hover
+{
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(43%) sepia(92%) saturate(1363%) hue-rotate(173deg) brightness(100%) contrast(106%);
+}
+
+.typing_anim
+{
+    /*color: #adffb8;*/
+    color: #93faa5;
+}
+
+
+/* SECTIONS MAIN CONTAINERS*/
+.mainSectionContainer
+{
+    height:     100vh;
+    width:      100vw;
+
+    font-size:  7vmin;
+}
+
+.mainContainerTitle_div
 {
     width:  100%;
     height: 18%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
 }
 
+.mainContainerTitle_text
+{   
+    text-align:     center;
+    color:      aquamarine;
+}
 
-#logo1
+.section p
+{
+    font-size:          3.5vmin;
+    text-transform:     none;
+}
+
+.section img
 {
     height: 7vmax; 
     margin-left: 2%;
 }
 
-#introDescription
+.projectContent_div
+{
+    height: 100%;
+
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+
+    padding-top: 5%;
+}
+
+.projectContent_sub_div
+{
+    width:  50%;
+    height: 100%;
+
+    padding-left:   2%;
+    padding-right:  2%;
+}
+
+.projectContent_sub_div h6
 {
     font-size:          3.5vmin;
-    margin-top:         2%;
     text-transform:     none;
+    padding-top:        2%;
+    text-align:         center;
+    
+    border-bottom: 1px solid #01E1F9;
+}
+
+.projectContent_sub_div p
+{
+    font-size:          2vmin;
+    text-transform:     none;
+    padding-top:        2%;
+}
+
+
+
+
+
+
+
+/* SKILLSET CARD */
+#skillSet
+{
+    width:              100%;
+    height:             60%;
+
+    padding-top: 4%;
+
+    border-radius:      15px;
+}
+
+.skill
+{
+    width:  100%;
+    height: 100%;
+}
+
+.skill .logoContainer
+{
+    width:  100%;
+    height: 50%;
+
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+}
+
+
+
+.skill .text
+{
+    width:  100%;
+    height: 50%;
+
+    display:            flex;
+    justify-content:    center;
+    align-items:        flex-start;
+
+    font-family:    'Roboto Condensed', sans-serif;
+    font-stretch:   extra-condensed;
+    font-weight:    bolder;
+    font-size:      25px;
+    color:        #01E1F9;
+}
+
+.logo
+{
+    height: 95%;
+}
+
+.logo:hover
+{
+    color: #031f31;
+
+    filter: invert(85%) sepia(17%) saturate(1379%) hue-rotate(330deg) brightness(106%) contrast(111%);
+}
+
+.skillRow
+{
+    width:  100%;
+    height: 50%;
+
+    display:            flex;
+    justify-content:    center;
+  
+}
+
+.skillCol
+{
+    width:  33.3%;
+    height: 100%;
+
+}
+
+
+/*Title Section*/
+#skillTittle
+{
+    width:  100%;
+    height: 25%;
+
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+
+    border-top-left-radius:     14px;
+    border-top-right-radius:    14px;
+
+    background-color: #031f31;
+}
+
+#titleImg
+{
+    height: 80%;
+}
+
+.titleText
+{
+    padding-left: 2%;
+
+    font-family:    'Roboto Condensed', sans-serif;
+    font-stretch:   extra-condensed;
+    font-weight:    bolder;
+    font-size:      40px;
+    color:        #01E1F9;
+}
+/*End Title Section*/
+
+
+
+#skillDisplay
+{
+    width:  100%;
+    height: 75%;
+
+    padding-top: 2%;
+
+    border-bottom-left-radius:     14px;
+    border-bottom-right-radius:    14px;
+
+    background-color:  #084567;    
+}
+
+
+
+.green
+{
+    background-color: #054121;
+}
+
+.yellow
+{
+    background-color: #9bc910;
+}
+
+.orange
+{
+    background-color: #c96910;
+}
+
+.blue
+{
+    background-color: #00a6ff;
 }
